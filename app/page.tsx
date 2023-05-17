@@ -23,7 +23,7 @@ const Home: FC = () => (
         <p className="text-xl font-medium text-neutral-900">{title}</p>
         <p className="text-xl text-neutral-500">{description}</p>
       </div>
-      <Button href="https://www.beskar.co/">Visit the website</Button>
+      <Button href="/login">Login</Button>
     </div>
   </div>
 );
