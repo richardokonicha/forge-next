@@ -2,10 +2,10 @@
   "name": "api",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"pnpm:next\" \"pnpm:stripe\"",
+    "dev": "node init && concurrently \"pnpm:next\" \"pnpm:stripe\"",
     "next": "next dev -p 3002",
-    "build": "next build",
-    "start": "next start",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "lint": "next lint",
     "analyze": "ANALYZE=true pnpm build",
     "stripe": "stripe listen --forward-to localhost:3002/webhooks/stripe"

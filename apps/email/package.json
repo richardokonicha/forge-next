@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "email build",
-    "dev": "email dev --port 3003",
+    "build": "node init && email build",
+    "dev": "node init && email dev --port 3003",
     "export": "email export"
   },
   "dependencies": {

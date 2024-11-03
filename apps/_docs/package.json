@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "next build",
-    "dev": "next dev -p 3006",
-    "start": "next start",
+    "build": "node init && next build",
+    "dev": "node init && next dev -p 3006",
+    "start": "node init && next start",
     "postinstall": "fumadocs-mdx"
   },
   "dependencies": {
