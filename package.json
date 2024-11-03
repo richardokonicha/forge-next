@@ -1,6 +1,6 @@
 {
   "name": "next-forge",
-  "version": "2.9.2",
+  "version": "2.9.3",
   "bin": {
     "next-forge": "./index.js"
   },
@@ -8,8 +8,8 @@
     "index.js"
   ],
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
+    "build": "node api.js && turbo build",
+    "dev": "node api.js && turbo dev",
     "lint": "turbo lint",
     "test": "turbo test",
     "bump-deps": "npx npm-check-updates --deep -u -x react-day-picker && pnpm install",
